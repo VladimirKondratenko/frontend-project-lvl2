@@ -21,8 +21,7 @@
   },
   "homepage": "https://github.com/VladimirKondratenko/frontend-project-lvl2#readme",
   "dependencies": {
-    "commander": "^8.1.0",
-    "esm": "^3.2.25"
+    "commander": "^8.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
