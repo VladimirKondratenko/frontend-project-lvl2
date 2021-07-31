@@ -1,0 +1,32 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "frontend-project-lvl2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirKondratenko/frontend-project-lvl2.git"
+  },
+  "author": "Vladimir Kondratenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirKondratenko/frontend-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/VladimirKondratenko/frontend-project-lvl2#readme",
+  "dependencies": {
+    "commander": "^8.1.0",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/register": "^7.14.5"
+  }
+}
