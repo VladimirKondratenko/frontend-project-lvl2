@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import program from 'commander';
+import { readFileSync } from 'fs';
 
 program
   .version('0.1')  
@@ -8,3 +9,5 @@ program
   .option('-f, --format [type]', 'output format')
 
 program.parse();
+console.log('test');
+// console.log('test', readFileSync(filepath1));
