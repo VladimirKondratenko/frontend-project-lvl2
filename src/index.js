@@ -7,7 +7,7 @@ const genDiff = (firstFile, secondFile) => {
   const keysSecondFile = Object.keys(parseSecondFile);
   const uniq = _.uniq([...keysFirstFile, ...keysSecondFile]);
   const sortUniq = _.sortBy(uniq);
-  
+
   const result = sortUniq.map(
     (key) => {
       const valuesFirstFile = parseFirstFile[key];
@@ -16,9 +16,9 @@ const genDiff = (firstFile, secondFile) => {
       if (valuesFirstFile === valuesSecondFile) {
         return `  ${key} : ${valuesFirstFile}`;
       }
-      
+
       if ((valuesFirstFile && valuesSecondFile) && (valuesFirstFile !== valuesSecondFile)) {
-        return `- ${key} : ${valuesFirstFile} + ${key} : ${valuesSecondFile} `
+        return `- ${key} : ${valuesFirstFile} + ${key} : ${valuesSecondFile} `;
       }
 
       if (valuesFirstFile !== undefined && !valuesSecondFile) {
@@ -28,10 +28,11 @@ const genDiff = (firstFile, secondFile) => {
       if (!valuesFirstFile && valuesSecondFile !== undefined) {
         return `+ ${key} : ${valuesSecondFile}`;
       }
-    }
+
+      return 0;
+    },
   );
-  console.log('result', result);
-  return result; 
+  return result;
 };
 
 export default genDiff;
